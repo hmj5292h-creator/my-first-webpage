@@ -1,0 +1,386 @@
+/*Apply to every parts*/
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+
+    color: #4a3428;
+    background-color: #ffffff;
+}
+
+/*Header*/
+header {
+    padding: 30px 20px;
+    text-align: center;
+
+    background-color: #f5eee8;
+    border-bottom: 4px solid #c9a58b;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+
+    font-size: 2rem;
+    letter-spacing: 1px;
+
+    color: #5a3828;
+}
+
+header h2 {
+    margin: 0 auto 20px auto;
+
+    max-width: 700px;
+
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.5;
+
+    color: #795548;
+}
+
+/*Logo*/
+header img {
+    display: block;
+
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+
+    margin: 20px auto;
+}
+
+
+/* Navigation bar?*/
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+
+    margin: 5px;
+    padding: 10px 16px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color: #795548;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #d98fa3;
+}
+
+/*Overall contents*/
+main {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    /* Box-Model System*/
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 30px;
+    margin: 30px auto;
+    padding: 25px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e4d4c8;
+}
+
+
+/*Heading part of content*/
+main h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    padding-bottom: 8px;
+
+    font-size: 1.5rem;
+
+    color: #5a3828;
+
+    border-bottom: 2px solid #d9a6b5;
+}
+
+main h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 1.15rem;
+
+    color: #795548;
+}
+
+
+/*Paragraph*/
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* Link*/
+
+a {
+    color: #795548;
+}
+
+a:hover,
+a:focus {
+    color: #b05c75;
+}
+
+/* List*/
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+li strong {
+    color: #5a3828;
+}
+
+
+/*Articles*/
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: #fbf8f5;
+
+    border-left: 4px solid #d9a6b5;
+}
+
+
+/*Figure, figcaption and image*/
+figure {
+    margin: 25px auto;
+
+    text-align: center;
+}
+
+figure img {
+    display: block;
+
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+figcaption {
+    margin-top: 10px;
+
+    font-size: 0.95rem;
+    font-style: italic;
+
+    color: #795548;
+}
+
+
+/* Audio*/
+audio {
+    display: block;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 20px auto;
+}
+
+
+/*Forms*/
+form {
+    width: 100%;
+}
+
+fieldset {
+    margin-bottom: 25px;
+    padding: 20px;
+
+    border: 2px solid #e4d4c8;
+    border-radius: 10px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #5a3828;
+}
+
+label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+    color: #5a3828;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+
+    color: #4a3428;
+    background-color: #ffffff;
+
+    border: 1px solid #c9a58b;
+}
+
+textarea {
+    min-height: 120px;
+
+    line-height: 1.5;
+
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #f0c7d2;
+    border-color: #d98fa3;
+}
+
+/*short description for the contact page*/
+.contact-introduction {
+    margin-bottom: 5px;
+}
+
+.contact-description {
+    margin-top: 0;
+    color: #5a3828;
+}
+
+
+/* Button to submit the form*/
+button {
+    display: block;
+
+    margin: 20px auto 5px auto;
+    padding: 12px 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color: #795548;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #d98fa3;
+}
+button:active {
+    background-color:#c9a58b
+}
+
+
+/*Footer*/
+footer {
+    margin-top: 20px;
+    padding: 25px 20px;
+
+    text-align: center;
+
+    color: #ffffff;
+    background-color: #5a3828;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+
+/*Responsive image*/
+
+picture {
+    display: block;
+
+    width: 100%;
+}
+
+
+/*For desktop to see the webpage*/
+@media (min-width: 800px) {
+
+    header {
+        padding: 40px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 50px 30px;
+    }
+
+    /* Navigation becomes a wider button-style bar */
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    nav a {
+        min-width: 110px;
+
+        margin: 0;
+        padding: 12px 20px;
+
+        text-align: center;
+    }
+
+    /* Arrange some content side by side */
+    main > section {
+        margin-bottom: 35px;
+    }
+
+    figure {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
