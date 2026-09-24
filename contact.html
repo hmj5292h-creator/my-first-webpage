@@ -3,6 +3,7 @@
 <head>
     <title>North Bakery Contact</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -30,13 +31,14 @@
         <section>
             <h2>Inquiry & Pre-Order Form</h2>
 
-            <form action="/submit" method="post">
+            <form action="/submit" method="post" novalidate>
 
                 <fieldset>
                     <legend>Customer Information</legend>
                     <!--User Name-->
                     <label for="userName">Full Name:</label>
-                    <input type="text" id="userName" name="fullName" placeholder="Enter the username" required>
+                    <input type="text" id="userName" name="fullName" placeholder="Enter the username">
+                    <p id="name-error"></p>
 
                     <!--Email-->
                     <label for="email">Email:</label>

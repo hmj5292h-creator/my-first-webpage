@@ -4,6 +4,7 @@
 <head>
     <title>North Star Bakery Menu</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,9 +29,22 @@
                 <h2>Breads</h2>
                 <h3>Freshly baked every morning by our cat bakers</h3>
                 <ul>
-                    <li><strong>Classic Milk Bread</strong> - Soft, fluffy bread with a gentle sweetness. ($ 6.00)</li>
-                    <li><strong>Signature Loaf</strong> - A sweet bread inspired by the night sky. ($ 4.00)</li>
-                    <li><strong>Cheese Cat Bread</strong> - Fluffy bread filled with creamy chesse ($ 4.00)</li>  
+                    <li><strong class="product-name">
+                        Classic Milk Bread</strong> - Soft, fluffy bread with a gentle sweetness. ($ 6.00)
+                        <button type="button" class="favorite-btn" onclick="addFavorite(this)">♡ Add to Favorites</button>
+                    </li>
+                    <li>
+                        <strong class="product-name">Signature Loaf</strong> - A sweet bread inspired by the night sky. ($ 4.00)
+                        <button type="button" class="favorite-btn" onclick="addFavorite(this)">
+                            ♡ Add to Favorites
+                        </button>
+                    </li>
+                    <li>
+                        <strong class="product-name">Cheese Cat Bread</strong> - Fluffy bread filled with creamy cheese ($ 4.00)
+                        <button type="button" class="favorite-btn" onclick="addFavorite(this)">
+                            ♡ Add to Favorites
+                        </button>
+                    </li>  
                 </ul>
             </article>
 
@@ -47,9 +61,24 @@
                 <h2>Pastries</h2>
                 <h3>Buttery, crispy and purr-fect for a morning treat</h3>
                 <ul>
-                    <li><strong>Cat Paw Danish</strong> - Flaky pastry topped with strawberries and cream. ($ 4.50)</li>
-                    <li><strong>Moonlight croissant</strong> - Crispy croissant with vanilla cream filling ($ 6.50)</li>
-                    <li><strong>Rocket Cream Puff</strong> - Light pastry filled with smooth custard cream ($ 4.00)</li>
+                    <li>
+                        <strong class="product-name">Cat Paw Danish</strong> - Flaky pastry topped with strawberries and cream. ($ 4.50)
+                        <button type="button" class="favorite-btn" onclick="addFavorite(this)">
+                            ♡ Add to Favorites
+                        </button>
+                    </li>
+                    <li>
+                        <strong class="product-name">Moonlight croissant</strong> - Crispy croissant with vanilla cream filling ($ 6.50)
+                        <button type="button" class="favorite-btn" onclick="addFavorite(this)">
+                            ♡ Add to Favorites
+                        </button>
+                    </li>
+                    <li>
+                        <strong class="product-name">Rocket Cream Puff</strong> - Light pastry filled with smooth custard cream ($ 4.00)
+                        <button type="button" class="favorite-btn" onclick="addFavorite(this)">
+                            ♡ Add to Favorites
+                        </button>
+                    </li>
                 </ul>
             </article>
         </section>
@@ -60,10 +89,25 @@
                 <h2>Cakes</h2>
                 <h3>Sweet creations for birthdays, celebrations, or just because...</h3>
                 <ul>
-                    <li><Strong>Future Cat Cake</Strong> - Chocolate cake decorated with our signature cat mascot. ($ 8.00)</li>
-                <li><strong>Galazy Cheesecake</strong> - Creamy cheesecake with a colourful galazy topping. ($ 7.50)</li>
+                    <li>
+                        <strong class="product-name">Future Cat Cake</strong> - Chocolate cake decorated with our signature cat mascot. ($ 8.00)
+                        <button type="button" class="favorite-btn" onclick="addFavorite(this)">
+                            ♡ Add to Favorites
+                        </button>
+                    </li>
+                    <li>
+                        <strong class="product-name">Galazy Cheesecake</strong> - Creamy cheesecake with a colourful galazy topping. ($ 7.50)
+                        <button type="button" class="favorite-btn" onclick="addFavorite(this)">
+                            ♡ Add to Favorites
+                        </button>
+                    </li>
                 </ul>
             </article>
+        </section>
+
+        <section>
+            <h2>My Favorites</h2>
+            <ul id="favorites-list"></ul>
         </section>
     </main>
 
@@ -72,5 +116,4 @@
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
