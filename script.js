@@ -75,24 +75,43 @@ function displayFavorites() {
 displayFavorites();
 
 
+//validation for the form: username and email//
+const form = document.querySelector("form");
 
+function validateForm() {
+    let valid = true;
 
+    const name = document.getElementById("userName");
+    const email = document.getElementById("email");
 
-//make the validation for the form
-if (contactForm) {
-    contactForm.addEventListener("submit", function(event) {
-        event.preventDefault();
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
 
-        const fullName = document.getElementById("userName");
-        const nameError = document.getElementById("name-error");
+    nameError.textContent = "";
+    emailError.textContent = "";
 
-        if (fullName.value.trim() === "") {
-            nameError.textContent = "Please enter your name.";
-            return;
-        }
+    // Required field check
+    if (name.value.trim() === "") {
+        nameError.textContent = "Please enter your name.";
+        valid = false;
+    }
 
-        nameError.textContent = "";
-        console.log("Form submitted");
-    });
+    if (email.value.trim() === "") {
+        emailError.textContent = "Please enter your email.";
+        valid = false;
+    }
+    // Email format check
+    else if (!email.value.includes("@")) {
+        emailError.textContent = "Please enter a valid email address.";
+        valid = false;
+    }
+
+    return valid;
 }
+
+form.addEventListener("submit", function(event) {
+    if (!validateForm()) {
+        event.preventDefault();
+    }
+});
 
